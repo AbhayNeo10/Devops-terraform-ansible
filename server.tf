@@ -11,12 +11,12 @@ provider "aws" {
 region = "us-east-1"
 }
 resource "aws_instance" "myawsserver" {
-  ami = "ami-0b0dcb5067f052a63"
+  ami = "ami-002070d43b0a4f171"
   instance_type = "t2.micro"
   key_name = "raman-import"
 
   tags = {
-    Name = "Raman-DevOps-batch-server"
+    Name = "abhay-DevOps-batch-server"
     env = "Production"
     owner = "Raman Khanna"
   }
